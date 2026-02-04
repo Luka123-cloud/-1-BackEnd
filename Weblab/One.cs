@@ -4,32 +4,48 @@ namespace Weblab
     {
         public static string MainPage()
         {
-            return
-                "<div style='text-align: center;'>" +
-                "<h1>Главная страница</h1>" +
-                "<li><a href='/about'>О нас</a></li>" +
-                "<li><a href='/contact'>Контакты</a></li>" +
-                "<p>Hello world!</p>";
-           
+            return """
+            <html>
+            <head><title>Р“Р»Р°РІРЅР°СЏ</title></head>
+            <body>
+                <h1>Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°</h1>
+                <p>РџСЂРёРІРµС‚ РјРёСЂ! Р Р°Р±РѕС‚Р°РµС‚</p>
+                <a href="/about">Рћ РЅР°СЃ</a><br>
+                <a href="/contact">РљРѕРЅС‚Р°РєС‚С‹</a>
+            </body>
+            </html>
+            """;
         }
+
         public static string AboutPage()
         {
-            return
-                "<div style='text-align: center;'>" +
-                "<h1>О нас</h1>" +
-                "<li> <a href='/'>Главная</a> </li>" +
-                "<li><a href='/contact'>Контакты</a></li>" +
-                "<p>Приложение работает</p>";
+            return """
+            <html>
+            <head><title>Рћ РЅР°СЃ</title></head>
+            <body>
+                <h1>Рћ РЅР°СЃ</h1>
+                <p>РџСЂРёРјРµСЂ СЃС‚СЂР°РЅРёС†С‹</p>
+                <a href="/">Р“Р»Р°РІРЅР°СЏ</a><br>
+                <a href="/contact">РљРѕРЅС‚Р°РєС‚С‹</a>
+            </body>
+            </html>
+            """;
         }
-        
+
         public static string ContactPage()
         {
-            return
-                "<div style='text-align: center;'>" +
-                "<h1>Контакты</h1>" +
-                "<li> <a href='/'>Главная</a> </li>" +
-                "<li><a href='/about'>О нас</a></li>" +
-                "<p>Почта: Keycopy@mail.com</p>";
+            return """
+            <html>
+            <head><title>РљРѕРЅС‚Р°РєС‚С‹</title></head>
+            <body>
+                <h1>РљРѕРЅС‚Р°РєС‚С‹</h1>
+                <p>Email: contactcopy@mail.com</p>
+                
+                <a href="/">Р“Р»Р°РІРЅР°СЏ</a><br>
+                <a href="/about">Рћ РЅР°СЃ</a>
+            </body>
+            </html>
+            """;
         }
     }
 }
