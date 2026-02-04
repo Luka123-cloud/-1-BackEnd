@@ -2,6 +2,7 @@ namespace Weblab
 {
     public static class One
     {
+        // Главная страница
         public static string MainPage()
         {
             return """
@@ -10,6 +11,7 @@ namespace Weblab
             <body>
                 <h1>Главная страница</h1>
                 <p>Привет мир! Работает</p>
+                <!-- Навигационные ссылки на другие страницы -->
                 <a href="/about">О нас</a><br>
                 <a href="/contact">Контакты</a>
             </body>
@@ -17,6 +19,7 @@ namespace Weblab
             """;
         }
 
+        // Страница "О нас"
         public static string AboutPage()
         {
             return """
@@ -25,6 +28,7 @@ namespace Weblab
             <body>
                 <h1>О нас</h1>
                 <p>Пример страницы</p>
+                <!-- Навигационные ссылки -->
                 <a href="/">Главная</a><br>
                 <a href="/contact">Контакты</a>
             </body>
@@ -32,6 +36,7 @@ namespace Weblab
             """;
         }
 
+        // Страница контактов
         public static string ContactPage()
         {
             return """
@@ -41,6 +46,7 @@ namespace Weblab
                 <h1>Контакты</h1>
                 <p>Email: contactcopy@mail.com</p>
                 
+                <!-- Навигационные ссылки -->
                 <a href="/">Главная</a><br>
                 <a href="/about">О нас</a>
             </body>
