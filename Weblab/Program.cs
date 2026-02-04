@@ -1,13 +1,7 @@
 using Weblab;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddRazorPages();
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    app.UseHsts();
-}
 // Главная
 app.MapGet("/", () => Results.Text(One.MainPage(), "text/html; charset=utf-8"));
 // О нас
