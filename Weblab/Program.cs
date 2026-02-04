@@ -8,11 +8,11 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-// Ãëàâíàÿ
+// Ð“Ð»Ð°Ð²Ð½Ð°Ñ
 app.MapGet("/", () => Results.Text(One.MainPage(), "text/html; charset=utf-8"));
-// Î íàñ
+// Ðž Ð½Ð°Ñ
 app.MapGet("/about", () => Results.Text(One.AboutPage(), "text/html; charset=utf-8"));
-// Êîíòàêòû
+// ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹
 app.MapGet("/contact", () => Results.Text(One.ContactPage(), "text/html; charset=utf-8"));
 
 app.Run();
